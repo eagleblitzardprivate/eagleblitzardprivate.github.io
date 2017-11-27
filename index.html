@@ -91,7 +91,6 @@
     @media screen and (max-width: 480px) {
         .col-xs-3{
             min-width: 50px;
-            font-size: 140px;
             margin-bottom: 5px;
         }
     }   
@@ -100,6 +99,14 @@
         justify-content:center;
         flex-wrap: wrap;
     }
+    .invisible{
+    font-size: 1.7em;
+    }
+    @media screen and (max-width: 480px) {
+        .invisible{
+            font-size: 0px;
+        }
+    } 
 </style>
 
 </head>
@@ -157,22 +164,22 @@
             <div class="row button-row">
                 <div class="col-xs-3">
                     <button id="challenge-run" class="btn btn-block btn-success">
-                        <i class="fa fa-caret-square-o-right"></i> Run
+                        <i class="fa fa-caret-square-o-right"></i> <b class="invisible">Run</b>
                     </button>
                 </div>
                 <div class="col-xs-3">
                     <button id="challenge-submit" class="btn btn-block btn-primary">
-                        <i class="fa fa-paper-plane"></i> Submit
+                        <i class="fa fa-paper-plane"></i> <b class="invisible">Submit</b>
                     </button>
                 </div>
                 <div class="col-xs-3">
                     <button id="challenge-hint" class="btn btn-block btn-info">
-                        <i class="fa fa-info-circle"></i> Hint
+                        <i class="fa fa-info-circle"></i> <b class="invisible">Hint</b>
                     </button>
                 </div>
                 <div class="col-xs-3">
                     <button id="challenge-clear" class="btn btn-block btn-danger">
-                        <i class="fa fa-refresh"></i> Restart
+                        <i class="fa fa-refresh"></i> <b class="invisible">Restart</b>
                     </button>
                 </div>
             </div>
